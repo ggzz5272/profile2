@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neumorphism Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  </style>
+</head>
+<body>
+
+  <!-- 메인 프로필 카드 -->
+  <div class="wrapper active" id="main-card">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="images/1.png" alt="Profile">
+      </div>
+    </div>
+    <div class="icon dots"><i class="fas fa-ellipsis-v"></i></div>
+    <div class="name">임강진</div>
+    <div class="about">Developer</div>
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/ggzz5272/"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <div class="buttons">
+      <button onclick="showSection('intro')">소개</button>
+      <button onclick="showSection('edu')">학력</button>
+      <button onclick="showSection('skills')">SKILLS</button>
+    </div>
+    <div class="contact">
+      <i class="fa-solid fa-phone"></i> 010-1234-5678<br />
+      <i class="fa-solid fa-envelope"></i> lim@example.com
+    </div>
+  </div>
+
+  <!-- 소개 섹션 -->
+  <div class="wrapper" id="intro-section">
+    <div class="icon arrow" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+    <div class="name">소개</div>
+    <div class="about">
+      <ul>이름: 임강진</ul>
+      <ul>2001년 01월 16일</ul>
+      <ul>거주지: 천안 쌍용동</ul>
+      <ul>전공: 컴퓨터 공학</ul>
+      <span>끊임없이 배우고, 더 나은 코드를 고민하는 개발자입니다.</span>
+    </div>
+  </div>
+
+  <!-- 학력 섹션 -->
+  <div class="wrapper" id="edu-section">
+    <div class="icon arrow" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+    <div class="name">학력</div>
+    <div class="about"><ul>인천부흥고등학교 - 2020 졸업</ul>
+      <ul>나사렛대학교 - 2026 졸업(예정) </ul>
+    </div>
+  </div>
+
+  <!-- 스킬 섹션 -->
+  <div class="wrapper" id="skills-section">
+    <div class="icon arrow" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+    <div class="name">SKILLS</div>
+    <div class="about">HTML, CSS, JavaScript, Python, Node.js</div>
+    
+ </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

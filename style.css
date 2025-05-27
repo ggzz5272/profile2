@@ -1,0 +1,141 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #ecf0f3;
+    }
+
+    .wrapper {
+      background: #ecf0f3;
+      box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+      position: relative;
+      width: 350px;
+      padding: 30px;
+      border-radius: 10px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .wrapper.active {
+      display: flex;
+    }
+
+    .icon {
+      font-size: 17px;
+      color: #31344b;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0.7;
+      top: 15px;
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 50%;
+    }
+
+    .icon i {
+      position: relative;
+      z-index: 9;
+    }
+
+    .icon.arrow {
+      left: 15px;
+    }
+
+    .icon.dots {
+      right: 15px;
+    }
+
+    .img-area {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .inner-area {
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+    }
+
+    .inner-area img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 23px;
+      font-weight: 500;
+      color: #31344b;
+      margin: 10px 0 5px 0;
+    }
+
+    .about {
+      color: #44476a;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      margin: 15px 0 25px 0;
+    }
+
+    .social-icons a {
+      height: 40px;
+      width: 40px;
+      margin: 0 5px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #4267B2;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .buttons button {
+      width: 100%;
+      padding: 12px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #ecf0f3;
+      box-shadow: -2px -2px 5px #ffffff, 2px 2px 4px #ceced1;
+      color: #31344b;
+      font-size: 15px;
+    }
+    
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #44476a;
+      text-align: center;
+      line-height: 1.6;
+    }
